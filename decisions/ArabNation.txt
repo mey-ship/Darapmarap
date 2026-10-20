@@ -17,6 +17,7 @@ country_decisions = {
 			NOT = { exists = ARB }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
+			NOT = { tag = MAM }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no

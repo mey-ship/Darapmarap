@@ -843,13 +843,12 @@ HOL_ideas = {
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
-		allowed_marine_fraction = 0.25
 	}
 	embrace_humanism = {
 		artillery_power = 0.1
 	}
 	army_sappers = {
-		backrow_artillery_damage = 0.1
+		allowed_marine_fraction = 0.25
 	}
 	platoon_fire = {
 		fire_damage = 0.1

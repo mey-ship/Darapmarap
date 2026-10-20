@@ -20,6 +20,8 @@ add_truce_with = QAR
 add_truce_with = RAS
 add_truce_with = ETH
 add_truce_with = FZA
+add_truce_with = NJD
+add_truce_with = ALH
 
 capital = 361 # Cairo
 add_army_professionalism = 0.1

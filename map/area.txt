@@ -1327,7 +1327,7 @@ yamamah_area = { #4
 }
 
 qasim_area = { #4
-	392 2337 4273 4274
+	392 2337 4273 4274 4276
 }
 
 dhofar_area = { #3 (Dhofar + Masirah)

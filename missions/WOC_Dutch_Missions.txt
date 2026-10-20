@@ -1448,7 +1448,7 @@ NED_3_1 = {
 		position = 4
 		required_missions = { NED_unification_of_low_countries } 
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 97
 			NOT = {
 				trade_share = {
 					country = ROOT
@@ -1457,7 +1457,7 @@ NED_3_1 = {
 			}
 		} 
 		trigger = {  
-			1269 = {
+			97 = {
 				trade_share = {
 					country = ROOT
 					share = 60
@@ -1475,7 +1475,7 @@ NED_3_1 = {
 				cost_multiplier = 0.5
 			}
 			hidden_effect = {
-				1269 = {
+				97 = {
 					every_trade_node_member_province = {
 						limit = {
 							province_has_center_of_trade_of_level = 1
@@ -1818,8 +1818,7 @@ NED_3_1 = {
 
 		trigger = {  
 			OR = {
-				has_institution = new_world_i
-				exploration_ideas = 2
+				adm_tech = 6
 			}
 		} 
 

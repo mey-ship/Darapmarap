@@ -1095,14 +1095,6 @@ country_event = {
 			set_province_flag = chose_egy_mission_flag
 		}
 		if = {
-			limit = { stability = 0 }
-			add_stability = -5
-		}
-		else = {
-			add_adm_power = -200
-			add_dip_power = -100
-		}
-		if = {
 			limit = { 
 				EGY = { exists = no }
 			}
@@ -1113,6 +1105,7 @@ country_event = {
 		
 		set_country_flag = egyptian_government_reform_flag
 		add_government_reform = egyptian_government_reform
+		set_country_flag = mam_enable_kashifs_local_organizations_flag
 	}
 }
 

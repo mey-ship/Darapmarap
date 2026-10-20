@@ -1,0 +1,17 @@
+trade_company_basra = { 
+	color = { 
+		152 151 146 
+	}
+	provinces = { 
+		412 2217 4289 4290 4342 394 395 396 2340 2347
+		393 2338 4272 392 2337 4274 2335 2336 2339 4275
+		408 2311 2312 4288 406 409 410 2310 4291 413
+		414 2209 2210 415 2211 4293 4294 4273 4276 
+	}
+	names = { 
+		name = TRADE_COMPANY_BASRA_Root_Culture_GetName
+	}
+	names = { 
+		name = TRADE_COMPANY_BASRA_Near_East_Trade_Company
+	}
+}
