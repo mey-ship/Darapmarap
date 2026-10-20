@@ -9,7 +9,7 @@ TUN_asserting_hafsid_authority = {
 }
 
 TUN_protectors_of_the_barbary_coast = {
-	own_coast_naval_combat_bonus = 1
+	own_coast_naval_combat_bonus = 0
 }
 
 TUN_foreign_quarters = {

@@ -197,6 +197,8 @@ technology = {
 technology = {
 	# Tech 8
 	year = 1505
+
+	armory = yes
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
