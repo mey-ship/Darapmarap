@@ -1,0 +1,22 @@
+#Halland, contains Halmstad, Varberg.
+owner = DAN
+controller = DAN
+add_core = DAN
+culture = danish
+religion = catholic
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Halmstad"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+1534.8.15 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }
+1534.11.15 = { controller = DAN revolt = { size = 1 } }
+1536.1.1 = { religion = Protestant }
+1565.9.15 = { controller = SWE }
+1569.12.4 = { controller = DAN }
+1680.1.1 = { culture = swedish }

@@ -1,0 +1,32 @@
+#2966 - Glogau 
+owner = GLG
+controller = GLG
+culture = schlesian
+religion = catholic
+capital = "Glogau"
+trade_goods = iron
+base_tax = 3
+base_production = 4
+is_city = yes
+base_manpower = 2
+add_core = GLG
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+1476.1.1 = { controller = BOH add_core = BOH }
+1526.8.30 = { controller = HAB add_core = HAB }
+1618.5.23 = { 
+	controller = BOH
+}
+1620.11.8 = { 
+	controller = HAB
+}
+1742.1.1 = { controller = PRU add_core = PRU }
+1750.1.1 = { base_tax = 8 base_production = 8 base_manpower = 13 }
+1806.7.12 = { hre = no }

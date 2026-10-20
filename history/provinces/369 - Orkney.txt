@@ -1,0 +1,28 @@
+#369 - Orkney
+owner = SCO
+controller = SCO
+culture = norwegian
+religion = catholic
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Kirkwall"
+is_city = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+1469.1.1 = { 
+	culture = scottish
+	controller = SCO
+	add_core = SCO
+}
+1609.1.1 = { religion = Reformed }
+1650.3.1 = { controller = REB revolt = { type = revolutionary_rebels size = 2 } }
+1650.4.27 = { controller = SCO revolt = { size = 1 } }
+1707.5.12 = { 
+	controller = GBR
+	add_core = GBR
+}
+add_core = SCO

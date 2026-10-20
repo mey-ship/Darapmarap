@@ -1,0 +1,25 @@
+# 193 Franche-Comté - Principal cities: Besançon
+owner = BUR
+controller = BUR
+capital = "Besançon"
+is_city = yes
+culture = burgundian
+religion = catholic
+base_tax = 3
+base_production = 4
+trade_goods = salt
+base_manpower = 3
+add_core = BUR
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1477.1.5 = { controller = FRA add_core = FRA }
+1493.8.19 = { controller = HAB add_core = HAB }
+1519.1.12 = { controller = SPA add_core = SPA }
+1665.9.17 = { add_claim = FRA }
+1668.2.20 = { controller = FRA }
+1668.5.2 = { controller = SPA }
+1674.9.1 = { controller = FRA }
+1806.7.12 = { hre = no }
+fort_15th = yes

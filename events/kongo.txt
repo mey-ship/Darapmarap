@@ -1,0 +1,46 @@
+namespace = rossomod3_event
+country_event = {
+	id = rossomod3_event.3
+	title = rossomod3_event.t
+	desc = rossomod3_event.d
+	picture  = GOOD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+		tag = KON
+		}
+		
+		mean_time_to_happen = {
+			days = 30
+		}
+		
+		fire_only_once = yes
+		
+			option = {
+			highlight = yes
+			name = rossomod_event.3.a
+			add_adm_tech = 1
+			add_dip_tech = 1
+			add_mil_tech = 1
+			capital_scope = {
+				add_institution_embracement = {
+					which = feudalism
+					value = 100
+				}
+			}
+			random_owned_province = {
+				limit = {
+					NOT = {
+						provincial_institution_progress = {
+							which = feudalism
+							value = 1
+						}
+					}
+					is_state = yes
+				}
+				add_institution_embracement = {
+					which = feudalism
+					value = 100
+				}
+			}
+				}
+ }

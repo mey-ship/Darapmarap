@@ -1,0 +1,32 @@
+#235 - Kent
+owner = ENG
+controller = ENG
+culture = english
+religion = catholic
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 2
+capital = "Canterbury"
+is_city = yes
+add_core = ENG
+seat_in_parliament = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+1450.5.1 = { controller = REB revolt = { type = anti_tax_rebels size = 2 } }
+1450.7.12 = { controller = ENG revolt = { size = 1 } }
+1460.1.1 = { controller = REB revolt = { type = pretender_rebels size = 2 } }
+1461.6.28 = { controller = ENG revolt = { size = 1 } }
+1538.1.1 = { religion = Protestant }
+1580.1.1 = { religion = Reformed }
+1642.8.22 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
+1646.5.5 = { controller = ENG revolt = { size = 1 } }
+1648.5.11 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
+1648.6.1 = { controller = ENG revolt = { size = 1 } }
+1707.5.12 = { 
+	controller = GBR
+	add_core = GBR
+}
+fort_15th = yes

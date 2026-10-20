@@ -1,0 +1,10 @@
+
+BEO = "countries/Beornia.txt"
+GCA = "countries/GranColumbia.txt"
+AME = "countries/Ameriga.txt"
+HER = "countries/Hereria.txt"
+PLA = "countries/Plantagenia.txt"
+ARC = "countries/Arcadia.txt"
+VIN = "countries/Vinland.txt"
+LUS = "countries/Lusitania.txt"
+FRE = "countries/Freiland.txt"

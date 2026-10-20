@@ -1,0 +1,26 @@
+# 194 Périgord - Principal cities: Bergerac
+owner = FRA
+controller = FRA
+capital = "Bergerac"
+is_city = yes
+culture = gascon
+religion = catholic
+base_tax = 3
+base_production = 3
+trade_goods = wine
+base_manpower = 3
+add_core = FRA
+add_core = GUY
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1560.1.1 = { religion = Reformed }
+1589.1.1 = { 
+	base_tax = 4
+	base_production = 4
+}
+1652.2.15 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
+1652.10.21 = { controller = FRA revolt = { size = 1 } }
+1686.1.17 = { religion = Catholic }
+1749.1.1 = { base_tax = 5 base_production = 5 }

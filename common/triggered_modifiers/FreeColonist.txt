@@ -1,0 +1,74 @@
+free_aspirations = {
+    potential = {
+	OR = {
+		ai = no
+	}
+	}		
+	trigger = {
+	    ai = no
+        adm_tech = 6
+		NOT = {tag = POR}
+	}
+
+	range = 4
+	colonists = 2
+	may_explore = yes
+	native_uprising_chance = -2
+	global_colonial_growth = 30
+}
+}
+free_aspirations_ai = {
+	potential = {
+		ai = yes
+	}
+	trigger = {
+	    ai = yes
+		adm_tech = 6
+			OR = {
+				tag = FRA
+				tag = POR
+				tag = ENG
+				tag = GBR
+				tag = SWE
+				tag = CAS
+				tag = SPA
+				tag = C00
+				tag = C02				
+				tag = C03
+				tag = C04
+				tag = C05
+				tag = C06
+				tag = C07
+				tag = C08
+				tag = C09
+				tag = C10
+				tag = C11
+				tag = C12
+				tag = C13
+				tag = C14
+				tag = C15
+				tag = C16
+				tag = C17
+				tag = C18
+				tag = C19
+				tag = C20
+				tag = C21
+				tag = C22
+				tag = C23
+				tag = C24
+				tag = C25
+				tag = C26
+				tag = C27
+				tag = C28
+				tag = C29
+				tag = C30
+				
+				
+			}
+	}
+	range = 0.5
+	colonists = 2
+	may_explore = yes
+	native_uprising_chance = -2
+	global_colonial_growth = 30
+}

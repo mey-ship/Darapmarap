@@ -1,0 +1,26 @@
+#618 - Deli
+
+culture = sumatran
+religion = sunni
+capital = "Riau"
+trade_goods = spices
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1405.1.1 = { discovered_by = MNG }
+
+1471.1.1 = { add_core = ATJ }
+1509.1.1 = { discovered_by = POR }
+1521.1.1 = {
+	remove_core = PSA
+}

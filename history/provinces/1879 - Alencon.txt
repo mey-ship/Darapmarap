@@ -1,0 +1,23 @@
+# 1879 - Alençon
+owner = NRM
+controller = NRM
+capital = "Alençon"
+is_city = yes
+culture = cosmopolitan_french
+religion = catholic
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+add_core = ALE
+add_local_autonomy = 80
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1449.3.24 = { 
+	controller = FRA
+}
+1686.1.17 = { religion = Catholic }
+1786.1.1 = { base_tax = 6 base_production = 6 }
+add_core = NRM

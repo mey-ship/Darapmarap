@@ -1,0 +1,293 @@
+country_event = { #The Sejm Diet of [GetYear]
+	id = my_custom_event.1
+	title = my_custom_event.1.t
+	desc = my_custom_event.1.d
+	picture = HRE_eventPicture
+	fire_only_once = yes
+
+trigger = {
+ ROOT = {
+	ai = no
+}	
+    tag = SON
+   NOT = { is_year = 1445 }
+}
+
+mean_time_to_happen = {
+    days = 1
+}
+
+option = {
+    name = none
+    
+        add_adm_tech = 1
+        add_mil_tech = 1
+        add_dip_tech = 1
+}
+
+
+}
+country_event = { #The Sejm Diet of [GetYear]
+	id = my_custom_event.2
+	title = my_custom_event.2.t
+	desc = my_custom_event.2.d
+	picture = HRE_eventPicture
+	fire_only_once = yes
+
+trigger = {
+ ROOT = {
+	ai = no
+}	
+    tag = VEN
+   NOT = { is_year = 1445 }
+}
+
+mean_time_to_happen = {
+    days = 1
+}
+
+option = {
+    name = none
+    set_in_empire = yes
+    4753 = {
+        cede_province = HRZ
+        remove_core = VEN
+    }
+        136 = {
+        cede_province = HRZ
+        remove_core = VEN
+    }
+    4174 = {
+        cede_province = ALB
+        remove_core = VEN
+    }
+     4754 = {
+        cede_province = SER
+        remove_core = VEN
+    }
+    142 = {
+        cede_province = EPI
+        remove_core = VEN
+    }
+    3003 = {
+        cede_province = NAX
+        remove_core = VEN
+    }
+    163 = {
+        cede_province = NAX
+        remove_core = VEN
+    }
+}
+}
+country_event = { #Poland Ruler Failsafe
+	id = my_custom_event.3
+	title = my_custom_event.3.t
+	desc = my_custom_event.3.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		NOT = { has_reform = polish_elective_monarchy }
+		NOT = { has_ruler = "Filip Agnieszka" }
+		is_year = 1448
+		NOT = { is_year = 1475 }
+		is_free_or_tributary_trigger = yes
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_pol_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_pol_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_pol_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = my_custom_event.3.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			culture = ROOT
+			religion = ROOT
+			adm = 5
+			dip = 4
+			mil = 5
+			age = 25
+			claim = 20
+		}
+		event_target:gecko_pol_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = my_custom_event.3.b
+		add_legitimacy = 20
+	}
+}
+
+country_event = { #Ottoman Ruler Failsafe
+	id = my_custom_event.4
+	title = my_custom_event.4.t
+	desc = my_custom_event.4.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		NOT = { has_ruler = "Mehmed II Fatih" }
+		NOT = { is_year = 1470 }
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_tur_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_tur_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_tur_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = my_custom_event.4.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 6
+			dip = 4
+			mil = 6
+			age = 30
+			claim = 20
+		}
+		event_target:gecko_tur_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = my_custom_event.4.b
+		add_legitimacy = 20
+	}
+}
+
+country_event = { #Ottoman Ruler Failsafe
+	id = my_custom_event.5
+	title = my_custom_event.5.t
+	desc = my_custom_event.5.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HOD
+		is_year = 1500
+	}
+	option = {
+		name = my_custom_event.5.a
+		add_reform_desire = 1
+	}
+
+}
+
+country_event = { #The Sejm Diet of [GetYear]
+	id = my_custom_event.6
+	title = my_custom_event.6.t
+	desc = my_custom_event.6.d
+	picture = HRE_eventPicture
+	fire_only_once = yes
+
+trigger = {
+ ROOT = {
+	ai = no
+}	
+    tag = SWI
+   NOT = { is_year = 1445 }
+}
+
+mean_time_to_happen = {
+    days = 1
+}
+
+option = {
+    name = none
+    1880 = {
+        cede_province = SWI
+        remove_core = HAB
+		add_core = SWI
+    }
+    72 = {
+        cede_province = SWI
+        remove_core = HAB
+		add_core = SWI
+		}	
+	}
+}

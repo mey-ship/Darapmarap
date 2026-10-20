@@ -1,0 +1,52 @@
+minor = {
+	potential = {
+	OR = {
+		OR = {
+            is_part_of_hre = yes
+            NOT = {is_great_power = yes}
+            NOT = { has_reform = steppe_horde }
+		}
+	}	
+			NOT = {total_own_and_non_tributary_subject_development = 300 }
+                  NOT = { has_reform = steppe_horde }
+			ROOT = {
+				ai = no
+			}	
+			NOT = { is_emperor = yes }
+		}
+	
+
+	trigger = {
+		NOT  = { is_year = 1500}
+		NOT = {tag = ENG}
+		NOT = {tag = FRA}
+		NOT = {tag = CAS}
+		NOT = {tag = HAB}
+		NOT = {tag = POL}
+		NOT = {tag = TUR}
+		NOT = {tag = MAM}
+		NOT = {tag = TIM}
+		NOT = {tag = MOS}
+		NOT = {tag = HUN}
+		NOT = {tag = BAH}
+		NOT = {tag = VIJ}
+										
+		NOT = {total_own_and_non_tributary_subject_development = 300 }
+            NOT = { has_reform = steppe_horde }	
+    #  	OR = {
+	#		AND = {
+	#			is_part_of_hre = yes
+	#			NOT = {is_great_power = yes}
+	#		}
+	#}
+		NOT = { is_emperor = yes }
+	}
+	advisor_cost = -0.15
+	advisor_pool = 1
+	interest = -0.25
+	global_regiment_cost = -0.1
+	global_autonomy = -0.05
+	monthly_reform_progress_modifier = 0.05
+	global_tax_income = 36
+        ae_impact = -0.1
+}

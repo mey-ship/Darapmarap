@@ -1,0 +1,18 @@
+on_startup = {
+	gecko_mercs = {
+		update = yes
+		on_startup = yes
+	}
+}
+
+on_province_owner_change = {
+	gecko_mercs = {
+		on_province_owner_change = yes
+	}
+}
+
+on_capital_moved = {
+	gecko_mercs = {
+		on_capital_moved = yes
+	}
+}

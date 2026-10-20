@@ -1,0 +1,23 @@
+# 2184 - Xining
+
+culture = xibei
+religion = vajrayana
+capital = "Xining"
+trade_goods = salt
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+
+1644.1.1 = {
+} # Li Zicheng's Shun empire
+1645.2.1 = {
+}
+1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest

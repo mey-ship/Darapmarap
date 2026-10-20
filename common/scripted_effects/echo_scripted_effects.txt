@@ -1,0 +1,568 @@
+development_counter = {
+	[[on_startup]
+		if = {
+			limit = {
+				ai = no	
+				NOT = { has_country_flag = has_development_counter_cflag }				
+			}
+			set_variable = {
+				which = adm_dev_counter
+				value = 0
+			}
+			set_variable = {
+				which = dip_dev_counter
+				value = 0
+			}
+			set_variable = {
+				which = mil_dev_counter
+				value = 0
+			}
+			set_variable = {
+				which = total_dev_counter
+				value = 0
+			}
+			set_country_flag = has_development_counter_cflag
+		}
+	]
+	
+	#All updates to variables in this section are in province scope.
+	[[adm]
+		owner = {
+			if = {
+				limit = { ai = no }
+				change_variable = {
+					which = adm_dev_counter
+					value = 1
+				}
+				change_variable = {
+					which = total_dev_counter
+					value = 1
+				}
+			}
+		}
+	]
+	[[dip]
+		owner = {
+			if = {
+				limit = { ai = no }
+				change_variable = {
+					which = dip_dev_counter
+					value = 1
+				}
+				change_variable = {
+					which = total_dev_counter
+					value = 1
+				}
+			}
+		}
+	]
+	[[mil]
+		owner = {
+			if = {
+				limit = { ai = no }
+				change_variable = {
+					which = mil_dev_counter
+					value = 1
+				}
+				change_variable = {
+					which = total_dev_counter
+					value = 1
+				}
+			}
+		}
+	]
+}
+bastard_dev_cost_add_from_buildings = {
+	if = {
+		limit = {
+			num_of_buildings_in_province = 1
+			NOT = {num_of_buildings_in_province = 2}
+		}
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_1
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 2
+			NOT = {num_of_buildings_in_province = 3}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_1
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_2
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 3
+			NOT = {num_of_buildings_in_province = 4}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_2
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_3
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 4
+			NOT = {num_of_buildings_in_province = 5}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_3
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_4
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 5
+			NOT = {num_of_buildings_in_province = 6}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_4
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_5
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 6
+			NOT = {num_of_buildings_in_province = 7}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_5
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_6
+				duration = -1
+		}
+	}
+	gc_update_infrastructure_building_investment_bonus = yes
+}
+
+bastard_dev_cost_remove_from_buildings = {
+	if = {
+		limit = {
+			NOT = {num_of_buildings_in_province = 1}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_1
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 1
+			NOT = {num_of_buildings_in_province = 2}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_2
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_1
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 2
+			NOT = {num_of_buildings_in_province = 3}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_3
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_2
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 3
+			NOT = {num_of_buildings_in_province = 4}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_4
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_3
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 4
+			NOT = {num_of_buildings_in_province = 5}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_5
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_4
+				duration = -1
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 5
+			NOT = {num_of_buildings_in_province = 6}
+		}
+		remove_province_modifier = bastard_dev_cost_modifier_6
+		add_province_modifier = {
+				name = bastard_dev_cost_modifier_5
+				duration = -1
+		}
+	}
+	gc_update_infrastructure_building_investment_bonus = yes
+}
+
+bastard_dev_cost_terrain_add_from_buildings = {
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			OR = {
+				has_terrain = woods
+				has_terrain = forest
+			}	
+		}
+		add_province_modifier = {
+			name = provincial_investment_woods
+			duration = -1
+		}	
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = hills
+		}
+		add_province_modifier = {
+			name = provincial_investment_hills
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = mountain
+		}
+		add_province_modifier = {
+			name = provincial_investment_mountain
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = jungle
+		}
+		add_province_modifier = {
+			name = provincial_investment_jungle
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = marsh
+		}
+		add_province_modifier = {
+			name = provincial_investment_marsh
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = desert
+		}
+		add_province_modifier = {
+			name = provincial_investment_desert
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = coastal_desert
+		}
+		add_province_modifier = {
+			name = provincial_investment_coastal_desert
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = coastline
+		}
+		add_province_modifier = {
+			name = provincial_investment_coastline
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = highlands
+		}
+		add_province_modifier = {
+			name = provincial_investment_highlands
+			duration = -1
+		}
+	}
+	
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = savannah
+		}
+		add_province_modifier = {
+			name = provincial_investment_savannah
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_courthouse_building_trigger = yes
+			has_terrain = steppe
+		}
+		add_province_modifier = {
+			name = provincial_investment_steppe
+			duration = -1
+		}
+	}
+}
+
+bastard_dev_cost_terrain_remove_from_buildings = {
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			OR = {
+				has_terrain = woods
+				has_terrain = forest
+			}	
+		}
+		remove_province_modifier = provincial_investment_woods
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = hills
+		}
+		remove_province_modifier = provincial_investment_hills
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = mountain
+		}
+		remove_province_modifier = provincial_investment_mountain
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = jungle
+		}
+		remove_province_modifier = provincial_investment_jungle
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = marsh
+		}
+		remove_province_modifier = provincial_investment_marsh
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = desert
+		}
+		remove_province_modifier = provincial_investment_desert
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = coastal_desert
+		}
+		remove_province_modifier = provincial_investment_coastal_desert
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = coastline
+		}
+		remove_province_modifier = provincial_investment_coastline
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = highlands
+		}
+		remove_province_modifier = provincial_investment_highlands
+	}
+	
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = savannah
+		}
+		remove_province_modifier = provincial_investment_savannah
+	}
+	if = {
+		limit = {
+			NOT = { has_courthouse_building_trigger = yes }
+			has_terrain = steppe
+		}
+		remove_province_modifier = provincial_investment_steppe
+	}
+}
+
+gc_update_expanded_infrastructure_bonus = {
+
+	remove_province_modifier = gc_expanded_infrastructure_extra_1
+	remove_province_modifier = gc_expanded_infrastructure_extra_2
+	remove_province_modifier = gc_expanded_infrastructure_extra_3
+	remove_province_modifier = gc_expanded_infrastructure_extra_4
+	remove_province_modifier = gc_expanded_infrastructure_extra_5
+
+	if = {
+		limit = {
+			owner = {
+				full_idea_group = infrastructure_ideas
+			}
+		}
+
+		if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 5
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_5
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 4
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 3
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 2
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 1
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_1
+				duration = -1
+			}
+		}
+	}
+}
+
+gc_update_regulation_bureau_production_hub = {
+
+	remove_province_modifier = gc_regulation_bureau_production_hub_bonus
+
+	if = {
+		limit = {
+			owner = {
+				infrastructure_ideas = 4
+			}
+			OR = {
+				has_province_modifier = echo_production_hub_grain_pmod
+				has_province_modifier = echo_production_hub_livestock_pmod
+				has_province_modifier = echo_production_hub_naval_supplies_pmod
+				has_province_modifier = echo_production_hub_cloth_pmod
+			}
+		}
+
+		add_province_modifier = {
+			name = gc_regulation_bureau_production_hub_bonus
+			duration = -1
+		}
+	}
+}
+
+gc_update_infrastructure_building_investment_bonus = {
+
+	remove_province_modifier = gc_infrastructure_building_dev_cost_1
+	remove_province_modifier = gc_infrastructure_building_dev_cost_2
+	remove_province_modifier = gc_infrastructure_building_dev_cost_3
+	remove_province_modifier = gc_infrastructure_building_dev_cost_4
+	remove_province_modifier = gc_infrastructure_building_dev_cost_5
+	remove_province_modifier = gc_infrastructure_building_dev_cost_6
+
+	if = {
+		limit = {
+			owner = {
+				has_idea = efficient_construction_plans
+			}
+		}
+
+		if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_6
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_6
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_5
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_5
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_4
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_3
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_2
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_1
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_1
+				duration = -1
+			}
+		}
+	}
+}

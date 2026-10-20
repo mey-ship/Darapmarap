@@ -1,0 +1,58 @@
+l_english:
+ gc_expanded_infrastructure_extra_1:0 "Expanded Infrastructure Bonus I"
+ gc_expanded_infrastructure_extra_1_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
+
+ gc_expanded_infrastructure_extra_2:0 "Expanded Infrastructure Bonus II"
+ gc_expanded_infrastructure_extra_2_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
+
+ gc_expanded_infrastructure_extra_3:0 "Expanded Infrastructure Bonus III"
+ gc_expanded_infrastructure_extra_3_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
+
+ gc_expanded_infrastructure_extra_4:0 "Expanded Infrastructure Bonus IV"
+ gc_expanded_infrastructure_extra_4_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
+
+ gc_expanded_infrastructure_extra_5:0 "Expanded Infrastructure Bonus V"
+ gc_expanded_infrastructure_extra_5_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
+
+
+ gc_infrastructure_building_dev_cost_1:0 "Provincial Investment Bonus I"
+ gc_infrastructure_building_dev_cost_1_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_2:0 "Provincial Investment Bonus II"
+ gc_infrastructure_building_dev_cost_2_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_3:0 "Provincial Investment Bonus III"
+ gc_infrastructure_building_dev_cost_3_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_4:0 "Provincial Investment Bonus IV"
+ gc_infrastructure_building_dev_cost_4_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_5:0 "Provincial Investment Bonus V"
+ gc_infrastructure_building_dev_cost_5_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_6:0 "Provincial Investment Bonus VI"
+ gc_infrastructure_building_dev_cost_6_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ bastard_dev_cost_modifier_1:0 "Provincial Investment I"
+ bastard_dev_cost_modifier_2:0 "Provincial Investment II"
+ bastard_dev_cost_modifier_3:0 "Provincial Investment III"
+ bastard_dev_cost_modifier_4:0 "Provincial Investment IV"
+ bastard_dev_cost_modifier_5:0 "Provincial Investment V"
+ bastard_dev_cost_modifier_6:0 "Provincial Investment VI"
+ provincial_investment_woods:0 "Improved Infrastructure: Woods"
+ provincial_investment_hills:0 "Improved Infrastructure: Hills"
+ provincial_investment_mountain:0 "Improved Infrastructure: Mountain"
+ provincial_investment_jungle:0 "Improved Infrastructure: Jungle"
+ provincial_investment_marsh:0 "Improved Infrastructure: Marsh"
+ provincial_investment_desert:0 "Improved Infrastructure: Desert"
+ provincial_investment_coastal_desert:0 "Improved Infrastructure: Coastal Desert"
+ provincial_investment_coastline:0 "Improved Infrastructure: Coastline"
+ provincial_investment_highlands:0 "Improved Infrastructure: Highlands"
+ provincial_investment_savannah:0 "Improved Infrastructure: Savannah"
+ provincial_investment_steppe:0 "Improved Infrastructure: Steppe"
+
+ #Provincial Investment
+gc_expanded_infrastructure_network_tt:0 "§YExpanded Infrastructure§! grants additional bonuses. Most of these bonuses scale recursively: from the §Y2nd level§! onward, each level adds one base bonus and then increases the accumulated bonus by §G50%§!. Construction and recruitment speed bonuses scale normally. Each level also grants §G-15% Local Governing Cost§!, while the additional flat Governing Cost is §R+25§! at the first level and §R+10§! for each level thereafter. §YDevelopment Cost§! and §YGreat Project Upgrade Cost§! are excluded.\n\n§RThe additional Infrastructure bonuses are capped at 5 Expanded Infrastructure levels.§!"
+  gc_regulation_bureau_tt:0 "§YProvince Improvement§! grants §G+1§! Base Goods Produced and §R+5§! Local Governing Cost."
+ gc_efficient_construction_plans_tt:0 "§YProvincial Investments§! from buildings provide §G3x§! the normal Development Cost modifier."
+ gc_regulation_bureau_production_hub_bonus:0 "Province Improvement Bonus"

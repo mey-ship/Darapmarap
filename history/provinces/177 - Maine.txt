@@ -1,0 +1,27 @@
+# 177 Maine - Principal cities: Le Mans, Laval
+owner = NRM
+controller = NRM
+capital = "Le Mans"
+is_city = yes
+culture = cosmopolitan_french
+religion = catholic
+base_tax = 4
+base_production = 4
+trade_goods = cloth
+base_manpower = 4
+add_local_autonomy = 80
+add_core = PRO
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1448.3.15 = { 
+	controller = FRA
+}
+1474.8.1 = { controller = FRA }
+1476.1.1 = { controller = PRO }
+1480.1.1 = { controller = FRA }
+1560.1.1 = { religion = Reformed }
+1686.1.17 = { religion = Catholic }
+1786.1.1 = { base_tax = 6 base_production = 6 }
+add_core = NRM

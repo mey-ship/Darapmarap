@@ -1,0 +1,33 @@
+#1767 - Veroce
+owner = CRO
+controller = CRO
+culture = croatian
+religion = catholic
+capital = "Osijek"
+trade_goods = livestock
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = CRO
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+1526.8.30 = { 
+	controller = TUR
+	add_core = TUR
+}
+1567.1.1 = { religion = Reformed }
+1604.1.1 = { controller = REB revolt = { type = noble_rebels size = 1 } }
+1606.1.1 = { controller = TUR revolt = { size = 1 } }
+1687.9.29 = { controller = HAB }
+1699.1.26 = { 
+	add_core = HAB
+}
+center_of_trade = 1

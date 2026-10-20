@@ -1,0 +1,53 @@
+bastard_dev_cost_modifier_1 = {
+	local_development_cost_modifier = -0.015
+}
+
+bastard_dev_cost_modifier_2  = {
+	local_development_cost_modifier = -0.025
+}
+
+bastard_dev_cost_modifier_3 = {
+	local_development_cost_modifier = -0.035
+}
+bastard_dev_cost_modifier_4 = {
+	local_development_cost_modifier = -0.045
+}
+bastard_dev_cost_modifier_5 = {
+	local_development_cost_modifier = -0.055
+}
+bastard_dev_cost_modifier_6 = {
+	local_development_cost_modifier = -0.075
+}
+provincial_investment_woods = {
+	local_development_cost_modifier = -0.025
+}
+provincial_investment_hills = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_mountain = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_jungle = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_marsh = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_desert = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_coastal_desert = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_coastline = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_highlands = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_savannah = {
+	local_development_cost_modifier = -0.025
+}	
+provincial_investment_steppe = {
+	local_development_cost_modifier = -0.025
+}	

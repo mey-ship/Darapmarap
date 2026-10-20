@@ -1,0 +1,12 @@
+#War Canoe
+type = transport
+
+hull_size = 2
+base_cannons = 0
+blockade = 0
+
+sail_speed = 2
+
+sailors = 10
+
+sprite_level = 1

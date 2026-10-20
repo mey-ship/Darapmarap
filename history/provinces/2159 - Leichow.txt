@@ -1,0 +1,30 @@
+# 2159 - Leichow
+
+culture = chimin
+religion = confucianism
+capital = "Leichow"
+trade_goods = sugar
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group
+discovered_by = indian
+
+1514.1.1 = { discovered_by = POR }
+
+1647.4.1 = {
+}
+1648.4.15 = {
+}
+1651.1.1 = {
+}
+1662.4.1 = {
+} # Three Feudatories
+1681.10.1 = {
+}

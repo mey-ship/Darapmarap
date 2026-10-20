@@ -1,0 +1,27 @@
+#581 - Sagaing
+
+culture = burmese
+religion = buddhism
+capital = "Sagaing"
+trade_goods = cotton
+hre = no
+base_tax = 5 
+base_production = 5
+base_manpower = 4
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = indian
+
+
+1527.1.1 = {
+	remove_core = AVA
+}
+1554.1.1 = { add_core = TAU }
+1555.1.22 = { controller = TAU }
+1563.4.1 = {	
+	remove_core = SST
+}
+1760.1.1 = { discovered_by = GBR }

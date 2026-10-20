@@ -1,0 +1,398 @@
+fleet_in_being = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+	}
+
+	cost = 0.1 # money cost per each sailor employed in the whole navy
+	country_modifier = {
+		naval_maintenance_modifier = -0.2
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 1
+}
+
+free_oarsmen = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+	}
+
+	cost = 0.1
+	country_modifier = {
+		allowed_marine_fraction = 0.33
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 2
+}
+
+merchant_navy = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+	}
+
+	cost = 0.1
+	country_modifier = {
+		ship_power_propagation = 0.25
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 3
+}
+
+ship_boarding = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+	}
+
+	cost = 0.1
+	country_modifier = {
+		capture_ship_chance = 0.33
+	}
+	
+	button_gfx = 4
+}
+
+
+
+
+danish_admirality = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		primary_culture = danish
+	}
+
+	cost = 0.1
+	country_modifier = {
+		leader_naval_manuever = 2
+		admiral_cost = -0.1
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 9
+}
+
+norwegian_sailors = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		OR = {
+			has_country_flag = unlock_norwegian_naval_doctrine
+			primary_culture = norwegian
+		}
+		NOT = { has_country_flag = nor_upgraded_norwegian_sailors_doctrine }
+	}
+
+	cost = 0.1
+	country_modifier = {
+		allowed_marine_fraction = 0.15
+		movement_speed_in_fleet_modifier = 1
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 10
+}
+
+norwegian_sailors_upgraded = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		primary_culture = norwegian
+		has_country_flag = nor_upgraded_norwegian_sailors_doctrine
+	}
+
+	cost = 0.1
+	country_modifier = {
+		allowed_marine_fraction = 0.15
+		sailors_recovery_speed = 0.25
+		movement_speed_in_fleet_modifier = 2
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 11
+}
+
+
+norse_raid_fleet = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		primary_culture = norse
+	}
+
+	cost = 0.1
+	country_modifier = {
+		privateer_efficiency = 0.33
+		movement_speed_in_fleet_modifier = 3
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 13
+}
+
+venetian_arsenal_naval_doctrine = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		primary_culture = venetian
+	}
+
+	cost = 0.1
+	country_modifier = {
+		number_of_cannons_modifier = 0.1
+		sailor_maintenance_modifer = -0.1
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 14
+}
+
+korean_panokseon = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		OR = {
+			culture_group = korean_g
+			primary_culture = korean_new
+		}
+	}
+
+	cost = 0.1
+	country_modifier = {
+		naval_forcelimit_modifier = 0.33
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 15
+}
+
+japanese_atakebune = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		culture_group = japanese_g
+	}
+
+	cost = 0.1
+	country_modifier = {
+		sailor_maintenance_modifer = -0.2
+	}	
+	removed_effect = {}
+	
+	button_gfx = 16
+}
+
+
+
+
+
+novgorodian_ushkuiniks = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		OR = {
+			culture = novgorodian
+			culture = novgorodian_new
+		}
+	}
+
+	cost = 0.1
+	country_modifier = {
+		sailor_maintenance_modifer = -0.1
+		allowed_marine_fraction = 0.15
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 21
+}
+
+dvoyane_admiralty = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		OR = {
+			culture = russian
+			culture = russian_new
+		}
+	}
+
+	cost = 0.1
+	country_modifier = {
+		navy_tradition = 1
+		leader_naval_shock = 1
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 22
+}
+
+malayan_seafaring = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		culture_group = malay
+	}
+
+	cost = 0.1
+	country_modifier = {
+		landing_penalty = -1
+		allowed_marine_fraction = 0.25
+		regiment_disembark_speed = 0.5
+		naval_attrition = -0.25
+		transport_attrition = -0.5
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 23
+}
+
+the_junk_fleet = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		culture_group = east_asian
+		NOT = { culture = korean_new }
+		NOT = { culture = jianghuai }
+	}
+
+	cost = 0.1
+	country_modifier = {
+		light_ship_cost = -0.5
+		naval_forcelimit_modifier = 0.25
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 24
+}
+
+chinese_treasure_fleet = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		always = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+	}
+
+	cost = 0.1
+	country_modifier = {
+		trade_range_modifier = 0.25
+		range = 0.25
+		treasure_fleet_income = 0.25
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 25
+}
+
+maratha_naval_bombards = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		culture_group = western_aryan
+	}
+
+	cost = 0.1
+	country_modifier = {
+		global_naval_barrage_cost = -0.25
+		siege_blockade_progress = 1
+		blockade_efficiency = 0.25
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 26
+}
+
+polynesian_navigation_seas = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		culture_group = pacific
+	}
+
+	cost = 0.1
+	country_modifier = {
+		may_explore = yes
+		range = 0.5
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 27
+}
+
+naval_tactica = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		OR = {
+			culture_group = byzantine
+			primary_culture = roman
+		}
+	}
+
+	cost = 0.1
+	country_modifier = {
+		disengagement_chance = 0.15
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 28
+}
+
+basque_marines = {
+	can_select = {
+		is_colonial_nation = no
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		primary_culture = basque
+	}
+
+	cost = 0.1
+	country_modifier = {
+		may_explore = yes 
+		landing_penalty = -1
+		allowed_marine_fraction = 0.25
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 29 
+}
+
+#1.36
+
+
+#colonial ones

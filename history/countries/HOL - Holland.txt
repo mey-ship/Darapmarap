@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = dutch
+capital = 4383 #Haag
+
+1419.9.11 = {
+	monarch = {
+		name = "Albert"
+		dynasty = "Valois"
+		birth_date = 1410.7.31
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = well_advised_personality
+}
+1440.2.22 = {
+	heir = {
+		name = "Willem"
+		dynasty = "Valois"
+		birth_date = 1429.2.22
+		death_date = 1457.11.24
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1580.1.1 = { set_legacy_government = administrative_republic } # Constitutionalism and the General Estates

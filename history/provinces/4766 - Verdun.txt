@@ -1,0 +1,33 @@
+# 4766 - Verdun
+owner = BAR
+controller = BAR
+capital = "Verdun"
+is_city = yes
+culture = burgundian
+religion = catholic
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+add_core = BAR
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1430.6.26 = { owner = PRO controller = PRO add_core = PRO }
+1467.6.15 = { add_core = BUR }
+1475.11.30 = { controller = BUR }
+1476.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 2 } }
+1477.1.5 = { controller = PRO revolt = { size = 1 } }
+1480.7.10 = { controller = BAR }
+1483.3.23 = { controller = LOR add_core = LOR }
+1551.3.20 = { controller = FRA add_core = FRA }
+1583.1.1 = { fort_15th = no fort_16th = yes }
+1636.7.30 = { controller = HAB }
+1636.10.10 = { controller = FRA }
+1648.1.1 = { fort_16th = no fort_17th = yes }
+1650.3.1 = { controller = REB revolt = { type = revolutionary_rebels size = 0 } }
+1650.12.13 = { controller = FRA revolt = { size = 1 } }
+1715.1.1 = { fort_17th = no fort_18th = yes }
+1806.7.12 = { hre = no }
+fort_15th = yes

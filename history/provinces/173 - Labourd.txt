@@ -1,0 +1,30 @@
+# 173 Labourd - Principal cities: Bayonne (can't change file name)
+owner = FRA
+controller = FRA
+capital = "Bayonne"
+is_city = yes
+culture = basque
+religion = catholic
+base_tax = 3
+base_production = 3
+trade_goods = wine
+base_manpower = 3
+add_core = GUY
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1444.1.1 = { add_core = AMG add_core = FRA }
+1453.7.18 = { controller = FRA }
+1549.12.22 = { 
+	controller = AUV
+	add_core = AUV
+}
+1560.1.1 = { religion = Reformed }
+1583.1.1 = { fort_15th = no fort_16th = yes }
+1589.1.5 = { controller = NAV add_core = NAV }
+1589.8.2 = { controller = FRA }
+1648.1.1 = { fort_16th = no fort_17th = yes }
+1686.1.17 = { religion = Catholic }
+1715.1.1 = { fort_17th = no fort_18th = yes }
+fort_15th = yes

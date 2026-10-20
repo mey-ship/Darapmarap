@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../map"
+		},
+		{
+			"path": "../missions"
+		},
+		{
+			"path": "../common"
+		},
+		{
+			"path": "../decisions"
+		},
+		{
+			"path": "../events"
+		},
+		{
+			"path": "../history"
+		}
+	]
+}

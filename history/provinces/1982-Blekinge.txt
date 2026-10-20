@@ -1,0 +1,27 @@
+#Blekinge
+add_core = DAN
+owner = DAN
+controller = DAN
+culture = danish
+religion = catholic
+base_tax = 2
+base_production = 2
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Ronneby"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+1525.1.1 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }
+1525.5.10 = { controller = DAN revolt = { size = 1 } }
+1534.8.15 = { controller = REB revolt = { type = revolutionary_rebels size = 1 } }
+1536.3.15 = { controller = DAN revolt = { size = 1 } religion = Protestant }
+1536.3.15 = { religion = protestant } # Unknown date
+1658.2.26 = { controller = SWE }
+1680.1.1 = { 
+	capital = "Karlskrona"
+	culture = swedish
+	shipyard = yes
+}

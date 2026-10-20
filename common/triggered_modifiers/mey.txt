@@ -1,0 +1,207 @@
+TUR = {
+	potential = {
+		tag = TUR
+	}
+	trigger = {
+		NOT = {
+			is_year = 1465
+		}
+		OR = {
+			AND = {
+				is_in_war = {
+					attackers = HUN
+				}
+				is_in_war = {
+					defenders = MAM
+				}
+				MAM = {
+					ai = no
+				}
+				HUN = {
+					ai = no
+				}
+			}
+			AND = {
+				is_in_war = {
+					attackers = HUN
+				}
+				is_in_war = {
+					attackers = MAM
+				}
+				MAM = {
+					ai = no
+				}
+				HUN = {
+					ai = no
+				}
+			}
+		}
+	}
+	mercenary_manpower = 1
+	land_forcelimit = 20
+        interest = -0.5
+}
+
+Merc_payments = {
+	potential = {
+		ROOT = {
+			ai = no
+		}
+	}
+	trigger = {
+		is_at_war = yes
+		NOT = {
+			manpower_percentage = 0.1
+		}
+	}
+	mercenary_discipline = -0.05
+}
+
+spa_two_front_war_buff = {
+    icon = being_in_debt
+
+    potential = {
+        tag = CAS
+    }
+
+    trigger = {
+        war_with = FRA
+        war_with = MOR
+		NOT  = { is_year = 1465}
+    }
+
+    
+    discipline = 0.025
+   mercenary_cost = -0.15
+	interest = -0.5
+	manpower_recovery_speed = 0.1
+	defensiveness = 0.1
+	global_autonomy = -0.1
+}
+cas_estate = {
+potential = {
+	OR = {
+	tag = SPA
+	tag = CAS
+	}
+		}
+		
+		trigger = {
+		OR = {
+		tag = SPA
+	    tag = CAS
+	}
+		OR = {
+		has_opinion = {
+	who = POR
+	value = 50
+}
+		marriage_with = POR
+		is_revolutionary = yes
+	
+	}
+	}
+	all_estate_loyalty_equilibrium = 0.1
+	}
+	
+	mor_estate = {
+potential = {
+	OR = {
+	tag = MOR
+	}
+		}
+		
+		trigger = {
+		tag = MOR
+		OR = {
+		marriage_with = TUN
+		is_revolutionary = yes
+		has_opinion = {
+	who = TUN
+	value = 50
+}
+has_opinion = {
+	who = TUN
+	value = 50
+}
+	
+	}
+	}
+	all_estate_loyalty_equilibrium = 0.1
+	}
+	
+	tun_estate = {
+potential = {
+	OR = {
+	tag = TUN
+	}
+		}
+		
+		trigger = {
+		tag = TUN
+		OR = {
+		marriage_with = MOR
+		marriage_with = ADU
+		is_revolutionary = yes
+		has_opinion = {
+	who = MOR
+	value = 50
+}
+has_opinion = {
+	who = ADU
+	value = 50
+}
+	
+	}
+	}
+	all_estate_loyalty_equilibrium = 0.1
+	}
+
+	por_estate = {
+potential = {
+	OR = {
+	tag = POR
+	}
+		}
+		
+		trigger = {
+		tag = POR
+		OR = {
+		marriage_with = SPA
+		marriage_with = CAS
+		is_revolutionary = yes
+		has_opinion = {
+	who = CAS
+	value = 50
+}
+has_opinion = {
+	who = SPA
+	value = 50
+}
+	
+	}
+	}
+	all_estate_loyalty_equilibrium = 0.1
+	}
+
+	son_two_front_war_buff = {
+    icon = being_in_debt
+
+    potential = {
+        tag = SON
+    }
+
+    trigger = {
+        defensive_war_with = TUN
+        defensive_war_with = MOR
+		NOT  = { is_year = 1460}
+    }
+
+    
+    discipline = 0.025
+   mercenary_cost = -0.1
+	interest = -0.25
+	manpower_recovery_speed = 0.15
+	defensiveness = 0.1
+	global_autonomy = -0.1
+}

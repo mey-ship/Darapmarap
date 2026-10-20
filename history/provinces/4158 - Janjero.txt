@@ -1,0 +1,14 @@
+#4158 - Janjero
+owner = WLY
+controller = WLY
+culture = sidamo
+religion = shamanism
+capital = "Fofa"
+is_city = yes
+base_manpower = 1
+trade_goods = slaves
+base_tax = 1
+base_production = 2
+discovered_by = east_african
+discovered_by = muslim
+add_core = WLY
