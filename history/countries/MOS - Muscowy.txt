@@ -9,6 +9,7 @@ capital = 295 # Moskva
 fixed_capital = 295 # Cannot move capital away from this province & no power cost to move to it
 historical_rival = GOL
 national_focus = ADM
+add_truce_with = SHY
 
 1389.5.19 = {
 	monarch = {

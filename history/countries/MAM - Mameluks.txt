@@ -22,6 +22,8 @@ add_truce_with = ETH
 add_truce_with = FZA
 add_truce_with = NJD
 add_truce_with = ALH
+add_truce_with = TUN
+add_truce_with = MOR
 
 capital = 361 # Cairo
 add_army_professionalism = 0.1

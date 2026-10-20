@@ -1,7 +1,7 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = feudal_theocracy
 technology_group = muslim
-religion = sunni
+religion = shiite
 primary_culture = uzbehk
 capital = 1075#Chimgi-Tura
 historical_rival = TIM
@@ -278,4 +278,4 @@ religious_school = hanafi_school
 		mil = 2
 	}
 }
-government_rank = 2
+government_rank = 1

@@ -10,6 +10,9 @@ add_truce_with = GRA
 add_truce_with = TMB
 add_truce_with = POR
 add_truce_with = CAS
+add_truce_with = MAM
+add_truce_with = SON
+
 
 change_estate_land_share = {
 	estate = estate_nobles
