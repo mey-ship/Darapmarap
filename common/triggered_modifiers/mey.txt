@@ -38,8 +38,9 @@ TUR = {
 		}
 	}
 	mercenary_manpower = 1
-	land_forcelimit = 20
-        interest = -0.5
+	land_forcelimit = 25
+        interest = -1
+        land_morale = 0.15
 }
 
 Merc_payments = {
