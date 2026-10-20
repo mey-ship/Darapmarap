@@ -1,0 +1,10 @@
+add_core = MFL
+owner = MFL
+base_tax = 1
+base_manpower = 1
+base_production = 1
+culture = hejazi_culture
+trade_goods = fish
+religion = shiite
+controller = MFL
+is_city = yes
