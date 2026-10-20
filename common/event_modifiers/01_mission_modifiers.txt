@@ -11412,10 +11412,10 @@ estate_burghers_persian_rugs_tooltip = {
 }
 
 estate_qizilbash_regimental_discipline_loyal = {
-	discipline = 0.05
+	discipline = 0.025
 }
 estate_qizilbash_regimental_discipline_neutral = {
-	discipline = 0.025
+	discipline = 0
 }
 estate_qizilbash_regimental_discipline_disloyal = {
 	discipline = -0.025
@@ -11426,12 +11426,12 @@ estate_qizilbash_regimental_discipline_tooltip = {
 	max_absolutism = -10
 }
 estate_qizilbash_regimental_discipline_qizilbash = {
-	shock_damage = 0.1
+	shock_damage = 0.05
 	is_qizilbash_modifier = yes
 }
 
 estate_nobles_tofangchi_regiment_tooltip = {
-	infantry_power = 0.1
+	cavalry_power = 0.05
 	nobles_influence_modifier = 0.1
 	nobles_loyalty_modifier = 0.05
 }
@@ -11464,7 +11464,7 @@ estate_nobles_tupchi_artillery_corps_tooltip = {
 
 estate_nobles_qurchi_service_tooltip = {
 	nobles_loyalty_modifier = 0.1
-	morale_damage_received = -0.1
+	morale_damage_received = -0.05
 }
 
 estate_nobles_qurchi_service_scaling = {
@@ -11575,7 +11575,6 @@ estate_church_muslim_integration_mod = {
 
 grain_trade_imports_modifier = {
 	supply_limit_modifier = 0.1
-	development_cost = -0.05
 	global_unrest = -1
 }
 
