@@ -2,7 +2,7 @@
 owner = SIB
 controller = SIB
 culture = kirgiz
-religion = tengri_pagan_reformed
+religion = shiite
 capital = "Baraba"
 trade_goods = livestock
 base_tax = 1

@@ -2,7 +2,7 @@
 owner = SIB
 controller = SIB
 culture = ostyaki
-religion = tengri_pagan_reformed
+religion = shiite
 capital = "Vah"
 trade_goods = fur
 base_tax = 2

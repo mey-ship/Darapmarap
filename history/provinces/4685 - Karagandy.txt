@@ -2,7 +2,7 @@
 owner = SHY
 controller = SHY
 culture = khazak
-religion = sunni
+religion = shiite
 capital = "Karagandy"
 trade_goods = wool
 base_tax = 1

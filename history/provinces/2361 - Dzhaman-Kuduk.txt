@@ -2,7 +2,7 @@
 owner = SHY
 controller = SHY
 culture = khazak
-religion = sunni
+religion = shiite
 capital = "Dzhaman-Kuduk"
 trade_goods = grain
 base_tax = 1

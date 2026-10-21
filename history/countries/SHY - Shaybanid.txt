@@ -1,18 +1,18 @@
 government = monarchy
-add_government_reform = feudal_theocracy
+add_government_reform = iqta
 technology_group = muslim
 religion = shiite
 primary_culture = uzbehk
 capital = 1075#Chimgi-Tura
 historical_rival = TIM
 religious_school = hanafi_school
-1435.1.1 = { 
+1425.1.1 = { 
 	monarch = { 
 		name = "Abu'l-Khayr"
 		dynasty = "Shaybanid"
-		dip = 4
+		dip = 2
 		adm = 4
-		mil = 4
+		mil = 5
 	}
 }
 1446.1.1 = { capital = 1970 } # moved to Syghnak

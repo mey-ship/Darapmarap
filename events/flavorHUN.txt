@@ -84,6 +84,150 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = flavor_hun.53
+	title = flavor_hun.53.t
+	desc = flavor_hun.53.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_hun.53.a"
+		153 = {
+			change_trade_goods = cloth
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.b"
+		153 = {
+			change_trade_goods = copper
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.c"
+		153 = {
+			change_trade_goods = iron
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.de"
+		153 = {
+			change_trade_goods = glass
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.e"
+		153 = {
+			add_base_production = 3
+		}
+	}	
+}
+
+country_event = { 
+    id = flavor_hun.47
+	title = flavor_hun.47.t
+	desc = flavor_hun.47.d
+	picture = BIG_BOOK_eventPicture 
+
+	is_triggered_only = yes
+	
+	option = { 
+	    name = flavor_hun.47.a
+		goto = 153
+		add_country_modifier = {
+			name = hun_corviana_library
+			duration = 7300
+		}
+		153 = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+					has_great_project = {
+						type = buda_castle
+						tier = 0
+					}
+				}
+				set_great_project_tier_1 = {
+					type = buda_castle
+				}
+			}
+			else = {
+				add_base_tax = 3
+			}
+		}
+	}
+}
+
+country_event = {
+    id = flavor_hun.41
+	title = flavor_hun.41.t
+	desc = flavor_hun.41.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = flavor_hun.41.a
+		ai_chance = { factor = 90 }
+		add_dip_power = 200
+		add_country_modifier = {
+			name = hun_imperial_crown_bid
+			duration = 7300
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 10 }
+	    name = flavor_hun.41.b
+		custom_tooltip = hun_elector_cb_tt
+		hidden_effect = {
+			every_elector = {
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			emperor = {
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+		}
+	}
+}
+
 # Administrative and Social Reforms of Mathias Corvinus
 country_event = {
 	id = flavor_hun.4
@@ -345,7 +489,7 @@ country_event = {
 }
 
 #magyar Peasant Revolt
-#György Dózsa
+#Gyï¿½rgy Dï¿½zsa
 country_event = {
 	id = flavor_hun.11
 	title = flavor_hun.11.t
@@ -396,7 +540,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				size = 2
-				leader = "György Dózsa"
+				leader = "Gyï¿½rgy Dï¿½zsa"
 			}
 			clr_province_flag = hun_peasant_revolt
 		}
@@ -411,7 +555,7 @@ country_event = {
 	}
 }
 
-#Tamás Bakócz
+#Tamï¿½s Bakï¿½cz
 country_event = {
 	id = flavor_hun.12
 	title = flavor_hun.12.t
@@ -442,7 +586,7 @@ country_event = {
 		add_prestige = 5
 		define_advisor = {
 			type = statesman
-			name = "Tamás Bakócz"
+			name = "Tamï¿½s Bakï¿½cz"
 			culture = hungarian
 			discount = yes
 			skill = 2
@@ -678,7 +822,7 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 2
-				leader = "Jan Jiskra z Brandýsa"
+				leader = "Jan Jiskra z Brandï¿½sa"
 			}
 		}
 	}
@@ -1272,7 +1416,7 @@ country_event = {
 	}
 }
 
-#Támas Nádasdy
+#Tï¿½mas Nï¿½dasdy
 country_event = {
 	id = flavor_hun.23
 	title = flavor_hun.23.t
@@ -1296,7 +1440,7 @@ country_event = {
 		name = flavor_hun.23.a
 		add_adm_power = 50
 		define_advisor = {
-			name = "Tamás Nádasdy"
+			name = "Tamï¿½s Nï¿½dasdy"
 			culture = hungarian
 			type = master_of_mint
 			skill = 3
@@ -1307,7 +1451,7 @@ country_event = {
 		name = flavor_hun.23.b
 		add_dip_power = 50
 		define_advisor = {
-			name = "Tamás Nádasdy"
+			name = "Tamï¿½s Nï¿½dasdy"
 			culture = hungarian
 			type = diplomat
 			skill = 3
@@ -1318,7 +1462,7 @@ country_event = {
 		name = flavor_hun.23.c
 		add_mil_power = 50
 		define_advisor = {
-			name = "Tamás Nádasdy"
+			name = "Tamï¿½s Nï¿½dasdy"
 			type = fortification_expert
 			culture = hungarian
 			skill = 3
@@ -1385,9 +1529,9 @@ country_event = {
 		change_tag = TRA
 		on_change_tag_effect = yes
 		define_ruler = {
-			name = "János"
+			name = "Jï¿½nos"
 			culture = hungarian
-			dynasty = "Zápolya"
+			dynasty = "Zï¿½polya"
 			claim = 95
 			change_adm = 4
 			change_dip = 3
@@ -1704,7 +1848,7 @@ country_event = {
 }
 
 
-# Tamás Erdödy
+# Tamï¿½s Erdï¿½dy
 country_event = {
 	id = flavor_hun.28
 	title = flavor_hun.28.t
@@ -1727,7 +1871,7 @@ country_event = {
 	option = {
 		name = flavor_hun.28.a
 		define_advisor = {
-			name = "Tamás Erdödy"
+			name = "Tamï¿½s Erdï¿½dy"
 			culture = hungarian
 			skill = 3
 			discount = yes
@@ -1738,7 +1882,7 @@ country_event = {
 	option = {
 		name = flavor_hun.28.b
 		define_general = {
-			name = "Tamás Erdödy"
+			name = "Tamï¿½s Erdï¿½dy"
 			shock = 3
 			fire = 3
 			manuever = 2
@@ -1749,7 +1893,7 @@ country_event = {
 }
 
 
-# Matthias Dévay
+# Matthias Dï¿½vay
 country_event = {
 	id = flavor_hun.29
 	title = flavor_hun.29.t
@@ -1802,7 +1946,7 @@ country_event = {
 	option = {
 		name = flavor_hun.29.a
 		define_advisor = {
-			name = "Matthias Dévay"
+			name = "Matthias Dï¿½vay"
 			skill = 3
 			discount = yes
 			religion = protestant
@@ -1824,7 +1968,7 @@ country_event = {
 			clr_province_flag = magyar_reform
 		}
 		define_advisor = {
-			name = "Thomas Szalaházy"
+			name = "Thomas Szalahï¿½zy"
 			culture = hungarian
 			religion = catholic
 			skill = 3
@@ -2097,7 +2241,7 @@ country_event = {
 }
 
 
-#Francis (II) Rákóczi
+#Francis (II) Rï¿½kï¿½czi
 #Event for independent Hungary
 country_event = {
 	id = flavor_hun.34
@@ -2128,7 +2272,7 @@ country_event = {
 		}
 		define_ruler = {
 			name = "Ferenc"
-			dynasty = "Rákóczy"
+			dynasty = "Rï¿½kï¿½czy"
 			culture = hungarian
 			adm = 4
 			dip = 5
@@ -2154,13 +2298,13 @@ country_event = {
 				size = 2
 				culture = hungarian
 				leader = "Ferenc"
-				leader_dynasty = "Rákóczy"
+				leader_dynasty = "Rï¿½kï¿½czy"
 			}
 		}
 	}
 }
 
-#Francis (II) Rákóczi
+#Francis (II) Rï¿½kï¿½czi
 #Event for subjected Hungary
 country_event = {
 	id = flavor_hun.35
@@ -2197,7 +2341,7 @@ country_event = {
 					}
 					define_ruler = {
 						name = "Ferenc"
-						dynasty = "Rákóczy"
+						dynasty = "Rï¿½kï¿½czy"
 						culture = hungarian
 						adm = 4
 						dip = 5
@@ -2225,13 +2369,13 @@ country_event = {
 				culture = hungarian
 				size = 3
 				leader = "Ferenc"
-				leader_dynasty = "Rákóczy"
+				leader_dynasty = "Rï¿½kï¿½czy"
 			}
 		}
 	}
 }
 
-#Francis (II) Rákóczi
+#Francis (II) Rï¿½kï¿½czi
 #Event for subjected Hungary
 country_event = {
 	id = flavor_hun.36
@@ -2251,7 +2395,7 @@ country_event = {
 			hidden_effect = {
 				define_ruler = {
 					name = "Ferenc"
-					dynasty = "Rákóczy"
+					dynasty = "Rï¿½kï¿½czy"
 					culture = hungarian
 					adm = 4
 					dip = 5
@@ -2263,7 +2407,7 @@ country_event = {
 }
 
 
-#Francis (II) Rákóczi
+#Francis (II) Rï¿½kï¿½czi
 #Event for subjected Hungary
 country_event = {
 	id = flavor_hun.37
@@ -2325,8 +2469,32 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 3
-				leader = "Ferenc II Rákóczy"
+				leader = "Ferenc II Rï¿½kï¿½czy"
 			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_hun.38
+	title = flavor_hun.38.t
+	desc = flavor_hun.38.d
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #Promote the Hungarian culture
+		name = flavor_hun.38.a
+		add_country_modifier = {
+			name = "hun_promote_hungarian_culture"
+			duration = -1
+		}
+	}
+	option = { #Guarantee the minority rights
+		name = flavor_hun.38.b
+		add_country_modifier = {
+			name = "hun_guarantee_minority_rights"
+			duration = -1
 		}
 	}
 }
