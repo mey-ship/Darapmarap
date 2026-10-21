@@ -1,5 +1,5 @@
-owner = PAP
-controller = PAP
+owner = PGA
+controller = PGA
 culture = umbrian
 religion = catholic
 hre = yes
@@ -10,8 +10,8 @@ base_manpower = 1
 capital = "Spoleto"
 is_city = yes
 add_core = SPL
-add_core = PAP
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+add_core = PGA

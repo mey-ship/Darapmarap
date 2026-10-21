@@ -1,6 +1,6 @@
 #119 - Ancona
-owner = PAP
-controller = PAP
+owner = URB
+controller = URB
 culture = umbrian
 religion = catholic
 hre = yes
@@ -10,7 +10,6 @@ trade_goods = paper
 base_manpower = 4
 capital = "Ancona"
 is_city = yes
-add_core = PAP
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -22,3 +21,4 @@ discovered_by = ottoman
 1814.4.11 = { 
 	controller = PAP
 }
+add_core = URB

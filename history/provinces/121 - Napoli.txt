@@ -17,6 +17,12 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
+add_province_modifier = {
+    name = naples_global_dom
+    duration = -1
+}
+
+
 1494.1.1 = { add_core = FRA }
 1495.2.22 = { controller = FRA }
 1495.7.7 = { controller = NAP }

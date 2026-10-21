@@ -14186,6 +14186,12 @@ maliki_scholar_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 }
 
+naples_global_dom = {
+	province_trade_power_modifier = 0.2
+        local_institution_spread = 0.3
+}
+
+
 #Perisna Influence Counter
 used_persian_influece_interaction_1 = { influence_to_vassal_elevation_cost = -20 }
 used_persian_influece_interaction_2 = { influence_to_vassal_elevation_cost = -40 }

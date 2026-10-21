@@ -27,6 +27,4 @@ center_of_trade = 1
 1814.4.11 = { 
 	controller = PAP
 }
-1444.11.11 = { 
-	remove_core = NAP
-}
+add_core = NAP
