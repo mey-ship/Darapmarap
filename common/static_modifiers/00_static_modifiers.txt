@@ -1383,7 +1383,6 @@ absolutism = {
 
 low_army_professionalism = {
 	mercenary_cost = -0.15
-	mercenary_manpower = 0.05
 }
 
 high_army_professionalism = {
@@ -2197,7 +2196,7 @@ mobilized_new_order_regiments = {
 ########################################
 
 expand_administation_modifier = {
-	expand_administration_cost = 250
+	expand_administration_cost = 0
 	governing_capacity = 150
 }
 
@@ -2362,7 +2361,7 @@ negative_imperial_authority_member = {
 
 slackening_modifier = {
     yearly_army_professionalism = -0.05
-    manpower_recovery_speed = 1.5
+    manpower_recovery_speed = 1.25
     land_maintenance_modifier = -0.1
 	reinforce_cost_modifier = -0.1
 }

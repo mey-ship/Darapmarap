@@ -1812,11 +1812,11 @@ swe_kalmar_union_mission_slot = {
 		position = 8
 		required_missions = { swe_high_income }
 		provinces_to_highlight = {
-			province_id = 4
+			province_id = 8
 		}
 		trigger = {
-			owns_core_province = 4
-			4 = {
+			owns_core_province = 8
+			8 = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
 					prosperity = 25

@@ -6,13 +6,13 @@ primary_culture = uzbehk
 capital = 1075#Chimgi-Tura
 historical_rival = TIM
 religious_school = hanafi_school
-1425.1.1 = { 
+1435.1.1 = { 
 	monarch = { 
 		name = "Abu'l-Khayr"
 		dynasty = "Shaybanid"
-		dip = 2
+		dip = 4
 		adm = 4
-		mil = 5
+		mil = 4
 	}
 }
 1446.1.1 = { capital = 1970 } # moved to Syghnak

@@ -3233,7 +3233,7 @@ dom_cas_missions_5 = {
 	
 	spa_new_capital = {
 		icon = spa_new_capital
-		required_missions = { spa_economic_reforms }
+		required_missions = { spa_law_and_order }
 		position = 5
 		provinces_to_highlight = {
 			province_id = 217

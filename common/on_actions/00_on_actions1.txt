@@ -5089,7 +5089,6 @@ on_leader_recruited = {
 
 # country
 on_general_recruited = {
-	on_general_recruited_effect = yes
 	if = {
 		limit = {
 			has_reform = sparapet_office

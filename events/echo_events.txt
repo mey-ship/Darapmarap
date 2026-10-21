@@ -2,20 +2,20 @@ namespace = echo
 
 country_event = { # state edicts
 		id = sealand_events.28
-		title = sealand_events.28.t
-		desc = sealand_events.28.d
-		picture = BIG_BOOK_eventPicture
-		is_triggered_only = yes
-		option = {
-			name = sealand_events.28.0
-			clr_country_flag = sea_state_edicts_flag
-		}
-		option = {
-			name = sealand_events.28.00
-			set_country_flag = sea_state_edicts_clear_flag
-			clr_country_flag = sea_state_edicts_flag
-			custom_tooltip = sealand_events.28.00.tt
-		}
+	title = sealand_events.28.t
+	desc = sealand_events.28.d
+	picture = BIG_BOOK_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = sealand_events.28.0
+		clr_country_flag = sea_state_edicts_flag
+	}
+	option = {
+		name = sealand_events.28.00
+		set_country_flag = sea_state_edicts_clear_flag
+		clr_country_flag = sea_state_edicts_flag
+		custom_tooltip = sealand_events.28.00.tt
+	}
 		option = {
 			name = sealand_events.28.1
 			every_owned_province = { 
