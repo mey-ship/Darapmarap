@@ -52,27 +52,27 @@ AME_ideas = { #Brazil - Ameriga
 	}
 	free = yes
 
-	governorate_general = {
+	governorate_general1 = {
 		monthly_reform_progress = 0.5
 	}
-	research_of_nassau = {
+	research_of_nassau1 = {
 		yearly_innovativeness = 0.25
 		innovativeness_gain = 0.5
 	}
-	mines_of_minas_gerais = {
+	mines_of_minas_gerais1 = {
 		gold_depletion_chance_modifier = -0.5
 		global_trade_goods_size_modifier = 0.1
 	}
-	halting_foreign_incursions = {
+	halting_foreign_incursions1 = {
 		fire_damage_received = -0.15
 	}
-	entradas_and_bandeiras = {
+	entradas_and_bandeiras1 = {
 		same_culture_advisor_cost = -0.1
 	}
-	inconfidencia_mineira = {
+	inconfidencia_mineira1 = {
 		discipline = 0.05
 	}
-	old_seat_of_the_empire = {
+	old_seat_of_the_empire1 = {
 		republican_tradition = 0.2
 	}
 }
@@ -214,29 +214,29 @@ ARC_ideas = { #United States - Arcadia
 	}
 	free = yes
 	
-	freedom_of_religion = {
+	freedom_of_religion1 = {
 		no_religion_penalty = yes
 		manpower_in_true_faith_provinces= 0.15
 	}
-	usa_bill_of_rights = {
+	usa_bill_of_rights1 = {
 		republican_tradition = 0.2
 	}
-	empire_of_liberty = {
+	empire_of_liberty1 = {
 		prestige = 1
 	}
-	lessons_of_valley_forge = {
+	lessons_of_valley_forge1 = {
 		infantry_power = 0.15
 		infantry_fire = 0.25
 	}
-	workshop_of_the_world = {
+	workshop_of_the_world1 = {
 		global_trade_goods_size_modifier = 0.1
 	}
-	shining_city_on_a_hill = {
+	shining_city_on_a_hill1 = {
 		defensiveness = 0.2
 		hostile_attrition = 1
 		max_hostile_attrition = 1
 	}
-	indian_removal = {
+	indian_removal1 = {
 		culture_conversion_cost = -0.25
 		development_cost = -0.1
  	}
@@ -258,27 +258,27 @@ VIN_ideas = { #Canada - Vinland
 	free = yes
 	
 		
-	singing_lumberjacks = {
+	singing_lumberjacks1 = {
 		global_trade_goods_size_modifier = 0.15
 	}	
-	the_hudson_bay_company = {
+	the_hudson_bay_company1 = {
 		country_diplomatic_power = 1
 	}
-    settling_the_interior = {
+    settling_the_interior1 = {
 		development_cost = -0.1
 	}
-	the_maritimes = {
+	the_maritimes1 = {
 		global_sailors_modifier = 0.3
 		allowed_marine_fraction = 0.2
 	}
-	the_quebec_act = {
+	the_quebec_act1 = {
 		republican_tradition = 0.2
 	}
-	legacy_of_the_empire = {
+	legacy_of_the_empire1 = {
 		embracement_cost = -0.2
 		global_institution_spread = 0.5
 	}
-	the_forests_of_canada = {
+	the_forests_of_canada1 = {
 		build_cost = -0.1
 	}
 }
@@ -295,27 +295,27 @@ LUS_ideas = { #Texas - Lusitania
 		tag = LUS
 	}
 	free = yes
-	lone_star_state = {
+	lone_star_state1 = {
 		prestige = 1
 	}
-	tex_revolution = { #Texas Rangers
+	tex_revolution1 = { #Texas Rangers
 		shock_damage = 0.1
 	}
-	cotton_plantations = {
+	cotton_plantations1 = {
 		production_efficiency = 0.1
 	}
-	vaqueros = {
+	vaqueros1 = {
 		cavalry_power = 0.15
 		cav_to_inf_ratio = 0.25
 	}
-	tex_native_frontiers = {
+	tex_native_frontiers1 = {
 		land_attrition = -0.15
 		movement_speed = 0.15
 	}
-	tejanos = {
+	tejanos1 = {
 		war_exhaustion = -0.05
 	}
-	adelsverin = {
+	adelsverin1 = {
 		army_tradition = 0.5
 	}
 }

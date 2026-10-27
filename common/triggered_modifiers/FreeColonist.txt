@@ -7,7 +7,6 @@ free_aspirations = {
 	trigger = {
 	    ai = no
         adm_tech = 6
-		NOT = {tag = POR}
 	}
 
 	range = 4
@@ -15,7 +14,6 @@ free_aspirations = {
 	may_explore = yes
 	native_uprising_chance = -2
 	global_colonial_growth = 30
-}
 }
 free_aspirations_ai = {
 	potential = {
