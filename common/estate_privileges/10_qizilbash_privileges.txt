@@ -530,7 +530,7 @@ estate_qizilbash_regimental_discipline = {
 			estate_loyalty = { estate = estate_qizilbash loyalty = 60 }
 		}
 		modifier = {
-			discipline = 0.05
+			discipline = 0.025
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -539,7 +539,7 @@ estate_qizilbash_regimental_discipline = {
 			NOT = { estate_loyalty = { estate = estate_qizilbash loyalty = 60 } }
 		}
 		modifier = {
-			discipline = 0.025
+			discipline = 0
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -583,7 +583,7 @@ estate_qizilbash_tofangchi_regiment = {
 		
 	}
 	benefits = {
-		infantry_power = 0.1
+		cavalry_power = 0.05
 	}
 	ai_will_do = {
 		factor = 100
@@ -667,7 +667,7 @@ estate_qizilbash_qurchi_service = {
 		}
 	}
 	benefits = {
-		morale_damage_received = -0.1
+		morale_damage_received = -0.05
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
