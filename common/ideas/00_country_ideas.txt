@@ -15892,31 +15892,31 @@ ASU_ideas = {
 ADU_ideas = {
 	start = {
 		land_morale = 0.15
-        cavalry_power = 0.10  
+		cavalry_power = 0.10
 	}
 
 	bonus = {
 		global_trade_goods_size_modifier = 0.15
 	}
-    
+
 	trigger = {
 		tag = ADU
 	}
-	free = yes        #will be added at load.
-    
+	free = yes
+
 	adu_stand_against_the_reconquista = {
 		fire_damage_received = -0.1
 		fire_damage = 0.05
 	}
 	adu_taifa_adminstration = {
 		advisor_cost = -0.2
-    }
+	}
 	adu_ahl_uhl_dhimma = {
 		discipline = 0.05
-    }
+	}
 	adu_legacy_of_ibn_arabi = {
 		idea_cost = -0.1
-		monthly_piety = -0.001
+		monthly_piety_accelerator = -0.001
 	}
 	adu_jund_settlements = {
 		global_manpower_modifier = 0.20
@@ -15924,7 +15924,6 @@ ADU_ideas = {
 	}
 	adu_expeditionary_sentiment = {
 		colonists = 1
-		effect = { remove_temporary_colonist = yes }
 	}
 	adu_al_awasim = {
 		defensiveness = 0.1
@@ -18138,17 +18137,17 @@ ARB_ideas = {
 	coffea_arabica = {
 		#See Yemeni Ideas
 	}
-	ras_unite_rassid_state = {
+	ras_unite_rassid_state1 = {
 		diplomats = 1
 	}
-	ras_mountain_strongholds = {
+	ras_mountain_strongholds1 = {
 		cavalry_power = 0.15
 		cav_to_inf_ratio = 0.25
 	}
-	ras_salt_in_water = {
+	ras_salt_in_water1 = {
 		land_morale = 0.1
 	}
-	ras_secure_trade_monopolies = {
+	ras_secure_trade_monopolies1 = {
 		trade_efficiency = 0.1
 	}
 }
